@@ -1,0 +1,9 @@
+[submodule "nestjs-msvc-project-other-msvc"]
+	path = nestjs-msvc-project-other-msvc
+	url = https://github.com/dasantosa/nestjs-msvc-project-other-msvc
+[submodule "nestjs-msvc-project-auth-msvc"]
+	path = nestjs-msvc-project-auth-msvc
+	url = https://github.com/dasantosa/nestjs-msvc-project-auth-msvc
+[submodule "nestjs-msvc-project-api-gateway"]
+	path = nestjs-msvc-project-api-gateway
+	url = https://github.com/dasantosa/nestjs-msvc-project-api-gateway

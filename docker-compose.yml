@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+    api-gateway:
+        image: api-gateway:latest
+        ports:
+            - 3000:3000
+        depends_on:
+            - auth-svc
+            - other-svc
+        environment:
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:3000/status"]
+            interval: 60s
+            timeout: 10s
+            retries: 3
+
+    auth-svc:
+        image: auth-microservice:latest
+        ports:
+            - 3001:3001
+
+    other-svc:
+        image: other-microservice:latest
+        ports:
+            - 3002:3002
